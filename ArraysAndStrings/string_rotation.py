@@ -29,7 +29,10 @@ def solution(a, b):
     return is_substring(a+a, b)
 
 def main():
-    for test_case in [("waterbottle", "erbottlewat"), ("waterbottle", "bottlewater"), ("water", "terwa")]:
+    for test_case in [
+        ("waterbottle", "erbottlewat"), 
+        ("waterbottle", "bottlewater"), 
+        ("water", "terwa")]:
         print(solution(test_case[0], test_case[1]))
     
 if __name__ == "__main__":
