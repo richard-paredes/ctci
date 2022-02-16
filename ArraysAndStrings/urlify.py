@@ -3,7 +3,7 @@ def solution(s, l):
     for i in range(l):
         if s[i].isspace():
             num_spaces += 1
-    
+
     idx = l + num_spaces * 2
     string_builder = [c for c in s]
     for i in range(l - 1, -1, -1):
@@ -15,7 +15,6 @@ def solution(s, l):
         else:
             string_builder[idx - 1] = string_builder[i]
             idx -= 1
-    
     return "".join(string_builder)
 
 def solution_alt(s, l):

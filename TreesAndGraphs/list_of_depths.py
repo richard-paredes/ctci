@@ -34,7 +34,6 @@ def traverse_bfs(node, depth_map={}, height=0):
         if height not in depth_map:
             depth_map[height] = []
         depth_map[height].append(current)
-
         queue.append((current.left, height + 1))
         queue.append((current.right, height + 1))
 
